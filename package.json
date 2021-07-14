@@ -1,0 +1,24 @@
+{
+  "name": "cuartoproyecto",
+  "version": "1.0.0",
+  "description": "Cuarto Reto WEB",
+  "main": "index.js",
+  "scripts": {
+    "test-snapshots": "jest --config=jest.config.js --detectOpenHandles --forceExit",
+    "test-snapshots-update": "jest --config=jest.config.js --updateSnapshot --detectOpenHandles --forceExit",
+    "test:percy": "percy exec -- jest -i `./tests-snapshots/__tests__/percy.test.js`"
+  },
+  "author": "Edith",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^2.3.0"
+  },
+  "dependencies": {
+    "@percy/puppeteer": "^2.0.0",
+    "chai": "^4.3.4",
+    "jest": "^27.0.3",
+    "jest-image-snapshot": "^4.5.0",
+    "mocha": "^8.4.0",
+    "puppeteer": "^10.0.0"
+  }
+}
